@@ -10,8 +10,8 @@
 
     <bean id="orderService" class="hello.core.order.OrderServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository"/>
-        <constructor-arg name="discountPolicy" ref="discontPolicy"/>
+        <constructor-arg name="discountPolicy" ref="discountPolicy"/>
     </bean>
 
-    <bean id="discontPolicy" class="hello.core.discount.RateDiscountPolicy"/>
+    <bean id="discountPolicy" class="hello.core.discount.RateDiscountPolicy"/>
 </beans>
